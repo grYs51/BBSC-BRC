@@ -1,0 +1,9 @@
+<div class="col card" [style.width.rem]="cardWidth">
+    <img class="card-img-top" src="{{imageSrc}}" alt="Card image uwu">
+    <div class="card-body">
+        <h5 class="card-title">{{cardTitle}}</h5>
+        <p class="card-text" [innerHTML]="cardText">{{cardText}}</p>
+        <a *ngIf="btnActive && routerActive" class="btn btn-primary" routerLink="btnLink">{{btnText}}</a>
+        <a *ngIf="btnActive && !routerActive" class="btn btn-primary" href="{{btnLink}}">{{btnText}}</a>
+    </div>
+</div>

@@ -1,0 +1,57 @@
+<div class="main">
+    <h1 class="h3">About the contest</h1>
+    <h2 class="h4">For everyone new, BRC is a Beat Saber contest where you collect tickets during the week by playing certain
+        songs. <br>At the end of the week you can win Discord Nitro!</h2>
+
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <app-infocard [imageSrc]="'https://media.giphy.com/media/VFeomYrdSUAVU29UXg/giphy.gif'"
+                [cardTitle]="'Who can join?'"
+                [cardText]="'Everything is pretty much the same compared to BRC2 (except the map pool of course). Everyone in the BBSC can join, requirement is registering on the BRC site. [before 20th of December 20pm]'"
+                [btnActive]="true"  [btnText]="'Join now!'" [routerActive]="true">
+            </app-infocard>
+
+            <app-infocard [imageSrc]="'https://media0.giphy.com/media/3o7buh66JQ9o81A61W/giphy.gif?cid=ecf05e47mj8k2h4nallifqcschcqsgbwtkh5gh1ofhuz33gm&rid=giphy.gif'"
+                [cardTitle]="'When will the event happen?'"
+                [cardText]="'BRC3 will start Friday 20th of December at 20pm, and end on the 29th of December 22pm. You can play the songs any time of the day but... Tickets will be given out each day at 22pm!'"
+                [btnActive]="false">
+            </app-infocard>
+            
+            <app-infocard [imageSrc]="'https://media1.tenor.com/images/c8c0e6588c416703742a082de8d5db1a/tenor.gif?itemid=18524215'"
+                [cardTitle]="'The songs/playlist'"
+                [cardText]="'This BRC will have 4 songs a day, handpicked by <b>Pixelguy</b> and <b>SlimyBlob</b>. The songs will be visible on the BBSC site, and the files on the BBSC Drive.'"
+                [btnActive]="true" [btnLink]="'https://www.google.com/'" [btnText]="'Go to the songs'" [routerActive]="false">
+            </app-infocard>
+        </div>
+        <br>
+        <div class="row">
+            <app-infocard [imageSrc]="'https://media3.giphy.com/media/SYRV56aJh0sSePgF03/giphy.gif?cid=ecf05e470aa7a7afafe07e589add2b265fadf9e7bd5b5aab&rid=giphy.gif'"
+                [cardTitle]="'Do I have to compete against SaberLegends?'"
+                [cardText]="'The players are divided into 2 categories: <br>Veterans and Beginners, the cutoff limit will be kept secret until the last day of registration. <br> Note: all registered participants will show up as Veteran for now.'"
+                [btnActive]="false">
+            </app-infocard>
+
+            <app-infocard [imageSrc]="'https://media.tenor.com/images/6895d70bea99d1a423518afba44a2ba6/tenor.gif'"
+                [cardTitle]="'How can I earn some sweet tickets?'"
+                [cardText]="'Tickets are given corresponding to how many players finished the song. <br> 1st Place: (#players) tickets <br>2nd Place: (#players-1) tickets <br>3th Place: (#players-2) tickets <br>and so on...'"
+                [btnActive]="false">
+            </app-infocard>
+
+            <app-infocard [imageSrc]="'https://media2.giphy.com/media/26uferKyHhvfiEjHa/giphy.gif?cid=ecf05e4736ui9oz7zqkzmewdhbek1g5aoosaw9xp4hs0rlyn&rid=giphy.gif'"
+                [cardTitle]="'Can I sponsor some prizes?'"
+                [cardText]="'This time, just like the previous edition btw, BRC3 will work with an open pot system, anyone who wants to donate 1€, 2€, ... or any amount for that matter, ask Slimy! (SlimyBlob#5261 on Discord). <br>Who donated will be made visible in a post somewhere.'"
+                [btnActive]="false">
+            </app-infocard>
+        </div>
+        <br>
+        <div class="row">
+            <app-infocard [imageSrc]="'https://media4.giphy.com/media/xUOwGmG2pRfFZUmdVe/giphy.gif?cid=ecf05e4743ejnl1ccvcjcou0p38fzod1xmar7f9mwm6r59ul&rid=giphy.gif'"
+                [cardTitle]="'When can I get my prize?'"
+                [cardText]="prizesText"
+                [btnActive]="false">
+            </app-infocard>
+        </div>
+
+    </div>
+</div>

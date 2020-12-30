@@ -1,0 +1,23 @@
+<div class="card-header">
+  <h4 class="my-0 font-weight-normal  text-center">Sign Up!</h4>
+</div>
+<div class="card-body">
+  <form #playerEntry="ngForm" class="form" (ngSubmit)="enter(playerEntry)">
+    <div class="mb-3">
+      <label for="inputSuccess1">Username</label>
+      <div class="input-group">
+        <input required ngModel type="text" class="form-control" name="displayName" placeholder="Eg: Eris">
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="inputSuccess2">ScoreSaber Url</label>
+      <input required ngModel matInput name="scoresaberUrl" type="url" class="form-control"
+        placeholder="Eg: https://scoresaber.com/u/76561198078718130">
+    </div>
+    <div  class="mb-3">
+        <button [disabled]="!playerEntry.valid" class="btn btn-primary btn-lg btn-block ">Enter</button>
+        <hr class="mb-4">
+    </div>
+  </form>
+  <button (click)='discordLogin.doAuthorization(true, islogged.getAuthUrl(),false)' class="btn  btn-lg btn-block" style="justify-content: center; background-color:#7289da; color:#fff" >Discord</button>
+</div>
