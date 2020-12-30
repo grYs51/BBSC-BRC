@@ -1,0 +1,18 @@
+<div class="card-header">
+  <h4 class="my-0 font-weight-normal  text-center">Participants - {{configsrv.overview.length}} players</h4>
+</div>
+<div class="card-body">
+  <mat-grid-list cols="8" rowHeight="1:1">
+    <mat-grid-tile *ngFor="let player of OverviewSorted">
+      <ng-template #tipContent>
+        <strong>{{player.DisplayName}}</strong>
+        <!-- <br>Total tickets: {{player.TotalTickets}}
+        <br>{{player.Category == 0 ? 'Beginner':'Veteran'}} pool -->
+      </ng-template>
+      <img height="100%" width="100%" class="thumbnail-image"
+        src="https://scoresaber.com/imports/images/usr-avatars/{{player.Id}}.jpg"
+        onerror="this.src='https://scoresaber.com/imports/images/oculus.png'" alt="{{player.DisplayName}}"
+        [tooltip]="tipContent" content-type="template" />
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

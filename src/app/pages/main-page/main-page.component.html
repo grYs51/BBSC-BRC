@@ -1,0 +1,27 @@
+<div class="main">
+  <div *ngIf="!closeButton" class="jumbotron jumbotron-fluid ">
+    <div class="col-sm-8 mx-auto">
+      <div class="container">
+        <h1 class="display-3">Welcome!</h1>
+        <p class="lead text-muted">Hey there, Are you ready for the {{configsrv.config.Edition}} BBSC Raffle contest?
+          <br>
+          Check here for more info!
+        </p>
+        <div>
+          <a class="btn btn-primary btn-lg text-capitalize" [routerLink]="['/about']" role="button">About »</a>
+          <a class="btn  text-capitalize" (click)="closeButton = !closeButton" role="button">Close</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container col-sm-8 mx-auto" style="padding-top: 10px;">
+    <div class="card-deck mb-2">
+      <div class="card mb-4 shadow-sm">
+        <app-sign-up></app-sign-up>
+      </div>
+      <div class="card mb-4 shadow-sm">
+        <app-participants></app-participants>
+      </div>
+    </div>
+  </div>
+</div>

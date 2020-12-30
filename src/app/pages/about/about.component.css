@@ -1,0 +1,16 @@
+.row {
+    justify-content: center;
+}
+
+h1 {
+    padding-top: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+h2 {
+    text-align: center;
+}
+
+.main {
+    background-color: #e9ecef;
+}
